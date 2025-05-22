@@ -1,1 +1,9 @@
 @import "tailwindcss";
+@theme {
+  --color-lightgray: #f4f6fa;
+}
+
+body {
+  background-color: var(--color-lightgray);
+  min-height: 100vh;
+}
