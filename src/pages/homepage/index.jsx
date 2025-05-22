@@ -5,7 +5,7 @@ import Card from "../../components/job_card";
 import useFetch from "../../hooks/useFetch";
 
 const Home = () => {
-  const { visibleData, loading, loadMore, hasMore } = useFetch(
+  const { allData, visibleData, loading, loadMore, hasMore } = useFetch(
     import.meta.env.VITE_API_URL,
     8
   );
@@ -13,10 +13,12 @@ const Home = () => {
   return (
     <main>
       <Container>
-        <div className="lg:flex md:gap-x-5 -mx-4">
+        <div className="lg:flex md:gap-x-5 -mx-4 my-8">
           <SideBar />
           <div className="lg:w-3/4 px-4">
-            Listings
+            <h1 className="text-4xl font-bold">
+              {allData.length} results found
+            </h1>
             <div className="-mx-4">
               {visibleData &&
                 visibleData.map(

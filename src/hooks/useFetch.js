@@ -50,6 +50,7 @@ const useFetch = (url, perPage) => {
   const hasMore = state.visibleData.length < state.allData.length;
 
   return {
+    allData: state.allData,
     visibleData: state.visibleData,
     error: state.error,
     loading: state.loading,
