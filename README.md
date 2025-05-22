@@ -1,16 +1,37 @@
-<<<<<<< HEAD
-# job-huntly
-=======
-# React + Vite
+# 💼 Job Huntly
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A job listing platform built using **React** and **Vite**, powered by a public jobs API. This project displays job openings with robust **search** and **filter** capabilities for a streamlined job-hunting experience.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [https://job-huntly-wine.vercel.app/](https://job-huntly-wine.vercel.app/)
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 3f7c3ac (initial commit)
+- 🔍 Search jobs by title
+- 📍 Filter jobs by city using checkboxes
+- 🕒 Show relative posting time
+- ⚡ Fast and optimized loading
+- ✅ Responsive design for mobile and desktop
+- 🔁 Uses a public API with no authentication required
+
+## 🛠 Tech Stack
+
+- ⚛️ React (Hooks)
+- ⚡ Vite
+- 💅 CSS Modules & Tailwind CSS
+- 📦 Fetch API
+- 🧪 Jest & RTL
+
+## 🚀 Get Started
+
+```bash
+git clone https://github.com/your-username/job-huntly.git
+cd job-huntly
+npm install
+npm run dev
+```
+
+## 🔗 Public API Used
+
+Data is fetched from the [Arbeitnow Job Board API](https://www.arbeitnow.com/api/job-board-api), which provides up-to-date job listings with no authentication required.
